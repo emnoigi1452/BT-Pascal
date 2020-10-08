@@ -7,7 +7,6 @@ var
 begin
     assign(input, f1); reset(input);
     assign(output, f2); rewrite(output);
-    {Assign default values for variables}
     h:=0; p:=0; s:=0;
     readln(n);
     h:=n div 3600;
