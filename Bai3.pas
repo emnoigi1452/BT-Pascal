@@ -20,7 +20,6 @@ begin
                 begin
                     if x mod y = 0 then
                     b:=false;
-                    break
                 end;
                 if b then
                 write(x, ' ');
