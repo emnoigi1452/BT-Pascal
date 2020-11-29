@@ -1,4 +1,4 @@
-program bt3; uses crt;
+program bt3;
 const f1='bt.in'; f2='bt.out';
 var
   n,j,k,valid,len,v: integer;
