@@ -1,5 +1,5 @@
 program practice;
-const f1='bt.in'; f2='bt.out'; none=maxlongint;
+const f1='bt.in'; f2='bt.out'; none=-1;
 var
   n,i,k1,k2,c: longint;
   r: array[1..1000000] of longint;
