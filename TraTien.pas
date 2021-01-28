@@ -5,13 +5,13 @@ var
   bool: boolean;
 procedure calc;
 begin
-  if a = 0 then a:=n div 50000
+  if (a=0) and (b=0) and (c=0) then a:=n div 50000
   else begin
     bool:=true;
-    if (a-2>=0) and bool then begin inc(b); a:=a-2; bool:=false; end;
-    if (b-2>=0) and bool then begin inc(c); b:=b-2; bool:=false; end;
-    if (c<>0) and bool then begin dec(c); b:=b+2; bool:=false; end;
-    if (b<>0) and bool then begin dec(b); c:=c+2; bool:=false; end;
+    if (a>=2) and bool then begin inc(b); a:=a-2; bool:=false; end;
+    if (b>=2) and bool then begin inc(c); b:=b-2; bool:=false; end;
+    if (c>0) and bool then begin dec(c); b:=b+2; bool:=false; end;
+    if (b>0) and bool then begin dec(b); a:=a+2; bool:=false; end;
   end;
 end;
 
