@@ -24,11 +24,13 @@ end;
 begin
   assign(input,f1); reset(input); readln(n);
   assign(output,f2); rewrite(output);
-  if n mod 50000 <> 0 then write(-1)
-  else begin
+    if (n >= 10000) and (n <= 3000000) then begin
+    if n mod 50000 <> 0 then write(-1)
+    else begin
     a:=0; b:=0; c:=0; d:=1;
     if n div 50000 mod 2 = 1 then while d < n div 50000 do begin calc; inc(d); print; end
     else while d <= n div 50000 do begin calc; inc(d); print; end;
+  end;
   end;
   close(input); close(output);
 end.
