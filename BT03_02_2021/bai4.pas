@@ -14,7 +14,7 @@ function min(r2: array of longint): longint;
 var y,z: longint;
 begin y:=maxlongint;
   for z:=0 to n-1 do
-    if(r2[z]<y) and (r2[z]<>-1) then y:=r2[z];
+    if(r2[z]<y) then y:=r2[z];
   min:=y;
 end;
 
